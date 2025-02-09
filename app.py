@@ -15,7 +15,7 @@ from chromadb.utils.embedding_functions import OpenCLIPEmbeddingFunction
 
 
 MAX_FILE_SIZE_MB = 10
-DATA_FOLDER_PATH = os.path.join(os.getcwd(), "fyp")
+DATA_FOLDER_PATH = os.path.join(os.getcwd(), "data")
 os.makedirs(DATA_FOLDER_PATH, exist_ok=True)
 
 
@@ -26,7 +26,7 @@ text_embedding_function = HuggingFaceEmbeddings(model_name="sentence-transformer
 image_embedding_function = OpenCLIPEmbeddingFunction()
 
 
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "your groq api key"
 
 
 def save_uploaded_file(uploaded_file):
